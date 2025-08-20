@@ -28,7 +28,7 @@ WM3-6 are covert (not readily visible) watermarks and are always present:
 # Roadmap
 
 * Add eBooks.de metadata removal (https://github.com/grayleonard/booxtream-epub-drm-remover/pull/9)
-* The Wordlist - get 5 words like "license", "is licensed to" and others that are common in eBooks of every country in the world. Please contribute any ones that you have to TheWordlist.txt and add in your language if it is not there already.
+* <b>The Wordlist - get 5 words like "license", "is licensed to" and others that are common in eBooks of every country in the world. Please contribute any ones that you have to TheWordlist.txt and add in your language if it is not there already. <i>Please do not blindy translate, but use data from ebook research.</i></b>
 
 # Installation
 

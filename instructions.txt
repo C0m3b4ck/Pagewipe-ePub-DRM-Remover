@@ -1,0 +1,11 @@
+1. Make venv (for Python3, Python2 version might require manual lib downloads):
+python3 -m venv yourvenv
+2. Activate the venv:
+source yourvenv/bin/activate
+3. Run these commands:
+pip install --upgrade pip
+pip install -r requirements.txt
+4. Run the script:
+python3 cure_python3.py -i your_dirty_book.epub -o your_clean_book.epub
+5. Compare the dirty and clean version:
+./diff.sh your_dirty_book.epub your_clean_book.epub

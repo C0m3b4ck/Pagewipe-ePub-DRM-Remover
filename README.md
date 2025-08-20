@@ -23,7 +23,7 @@ WM3-6 are covert (not readily visible) watermarks and are always present:
 * Simpler instructions
 * Support both for XML and HTML cleaning
 * Support for config files
-<br>'''Check out documentation.txt for more info!'''
+<b>Check out documentation.txt for more info!</b>
 
 # Roadmap
 

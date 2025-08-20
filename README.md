@@ -1,17 +1,16 @@
-BooXtream ePub DRM Remover
+Pagewipe ePub DRM Remover
 ===
 
-This script is an implementation of Institute of Biblio-Immunology's First Communique:
+The script removes various manifestations of BooXtream's 'Social DRM' from ePub files. It is forked from <a href=https://github.com/grayleonard/booxtream-epub-drm-remover>Grayleonard's repo</a>. However, that has been abandoned and I have decided to remake it with support for Python3.
 
+More from Grayleonard: 
 ["Identifying and Removing Verso/BooXtream 'Social DRM' EPUB eBook Watermarks"](https://pastebin.com/raw/E1xgCUmb)
-
-It removes the various manifestations of BooXtream's 'Social DRM' from ePub files.
 
 The seven DRM watermarks that are removed are:
 ```
 "WM0-2 are overt (readily visible) watermarks and are optional (meaning they may not necessarily be present):
   [WM0] -- Ex Libris Image Watermark
-  [WM1] -- Disclaimer Page Watermark
+  [WM1] -- Disclaimer Page Watermark (via keywords)
   [WM2] -- Footer Watermarks
 WM3-6 are covert (not readily visible) watermarks and are always present:
   [WM3] -- Filename Watermarks
@@ -19,20 +18,30 @@ WM3-6 are covert (not readily visible) watermarks and are always present:
   [WM5] -- CSS Watermark
   [WM6] -- Image Metadata Watermarks"
 ```
+# My additions
+* Support for Python3
+* Simpler instructions
+* Support both for XML and HTML cleaning
+* Support for config files
+<br>'''Check out documentation.txt for more info!'''
 
-Installation
-===
+# Installation
 
-Python requirements:
+Read instructions.txt or read below:
 
-```BeautifulSoup4, Wand (both can be installed via pip or easy_install)```
-
-System requirements:
-
-```ImageMagick (used by Wand)``` 
-
-
-Running
-===
-
-```cure.py -i <infected .epub> -o <destination>```
+**1. Make venv (for Python3, Python2 version might require manual lib downloads):**
+<br>```python3 -m venv yourvenv```
+<br>**2. Activate the venv:**
+<br>```source yourvenv/bin/activate```
+<br>**3. Run these commands:**
+<br>```pip install --upgrade pip```
+<br>```pip install -r requirements.txt```
+<br>**4. Run the script:**
+<br>```python3 cure_python3.py -i your_dirty_book.epub -o your_clean_book.epub```
+<br>**5. Compare the dirty and clean version:**
+<br>```./diff.sh your_dirty_book.epub your_clean_book.epub```
+# Running
+<br>Python2 version:
+<br>```cure.py -i <infected .epub> -o <cleaned .epub output>```
+<br>Python3 version:
+<br>```python3 cure_python3.py -i <infected .epub> -o <cleaned .epub output> -c <configfile>```

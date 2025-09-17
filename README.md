@@ -1,4 +1,4 @@
-Pagewipe ePub DRM Remover
+Pagewipe ePub DRM Remover ![GitHub All Releases](https://img.shields.io/github/downloads/C0m3b4ck/Pagewipe-ePub-DRM-Remover/total)
 ===
 
 The script removes various manifestations of BooXtream's 'Social DRM' from ePub files. It is forked from <a href=https://github.com/grayleonard/booxtream-epub-drm-remover>Grayleonard's repo</a>. However, that has been abandoned and I have decided to remake it with support for Python3.
